@@ -51,7 +51,7 @@ resource "azurerm_linux_virtual_machine" "NJ_VM" {
   name                = "NJVM"
   location            = "South Central US"
   resource_group_name = "1-5cb7191f-playground-sandbox"
-  size                = "Standard_DS1_v2"
+  size                = "Standard_D2s_v3"
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.NJ_nic.id,
